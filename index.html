@@ -10,6 +10,7 @@
 <title>Helsesjekk – Spørreskjema</title>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <style>
   :root {
     --cream: #f7f4ef;
@@ -692,12 +693,12 @@
       <p style="font-size:.88rem;color:#2d6a4f;font-weight:600;margin:0 0 10px;display:flex;align-items:center;gap:6px">📋 Slik sender du skjemaet til klinikken</p>
       <ol style="font-size:.83rem;color:#2d5a42;line-height:1.9;margin:0;padding-left:20px">
         <li>Fyll ut alle spørsmålene i nettleseren din</li>
-        <li>Gå til siste side og last ned PDF-en til din enhet</li>
-        <li>Logg inn på <a href="https://www.pasientsky.no" target="_blank" rel="noopener" style="color:#2d6a4f;font-weight:600">pasientsky.no</a> og send PDF-en som vedlegg til klinikken</li>
+        <li>Gå til siste side og last ned helseskjemaet til din enhet</li>
+        <li>Logg inn på <a href="https://www.pasientsky.no" target="_blank" rel="noopener" style="color:#2d6a4f;font-weight:600">pasientsky.no</a> og send helseskjemaet som vedlegg til klinikken</li>
       </ol>
       <div style="background:#fdecea;border:1px solid #e8b4b0;border-radius:7px;padding:9px 12px;margin-top:10px">
-        <p style="font-size:.8rem;color:#c0392b;font-weight:600;margin:0 0 2px">⚠️ Viktig – ikke send PDF på e-post</p>
-        <p style="font-size:.78rem;color:#922b21;margin:0;line-height:1.5">PDF-en inneholder helseopplysninger og skal <strong>kun</strong> sendes via <a href="https://www.pasientsky.no" target="_blank" rel="noopener" style="color:#922b21">pasientsky.no</a>. Svar aldri ved å sende filen tilbake på e-post.</p>
+        <p style="font-size:.8rem;color:#c0392b;font-weight:600;margin:0 0 2px">⚠️ Viktig – ikke send helseskjemaet på e-post</p>
+        <p style="font-size:.78rem;color:#922b21;margin:0;line-height:1.5">Filen inneholder helseopplysninger og skal <strong>kun</strong> sendes via <a href="https://www.pasientsky.no" target="_blank" rel="noopener" style="color:#922b21">pasientsky.no</a>. Svar aldri ved å sende filen tilbake på e-post.</p>
       </div>
     </div>
 
@@ -706,10 +707,10 @@
       <ul style="font-size:.8rem;color:#34495e;line-height:1.7;margin:0;padding-left:18px">
         <li><strong>Ingen data sendes til noen server.</strong> Alt du fyller inn behandles kun lokalt i din nettleser.</li>
         <li><strong>Ingen informasjonskapsler (cookies)</strong> eller sporingsverktøy brukes.</li>
-        <li><strong>PDF-en lagres kun på din enhet</strong> – det er du som kontrollerer hvem som får tilgang.</li>
+        <li><strong>Helseskjemaet lagres kun på din enhet</strong> – det er du som kontrollerer hvem som får tilgang.</li>
         <li>Når du lukker nettleseren, forsvinner alle data du har fylt inn. Ingenting lagres.</li>
       </ul>
-      <p style="font-size:.75rem;color:#7f8c8d;margin:8px 0 0;line-height:1.5">Denne nettsiden fungerer utelukkende som et digitalt skjema – ingen helsedata berører vår server. Databehandlingen skjer på din enhet, og du er selv ansvarlig for å sende den ferdige PDF-en via sikker kanal (Pasientsky).</p>
+      <p style="font-size:.75rem;color:#7f8c8d;margin:8px 0 0;line-height:1.5">Denne nettsiden fungerer utelukkende som et digitalt skjema – ingen helsedata berører vår server. Databehandlingen skjer på din enhet, og du er selv ansvarlig for å sende det ferdige helseskjemaet via sikker kanal (Pasientsky).</p>
     </div>
   </div>
   <div class="nav">
@@ -1782,28 +1783,28 @@
   <div class="card" style="text-align:center;padding:32px 24px">
     <div style="font-size:3rem;margin-bottom:16px">🙏</div>
     <p style="font-family:'Lora',serif;font-size:1.1rem;font-weight:600;color:var(--ink);margin-bottom:8px">Tusen takk for at du tok deg tid til å fylle ut helsesjekken.</p>
-    <p style="font-size:.88rem;color:var(--muted);line-height:1.7;max-width:400px;margin:0 auto">Svarene dine hjelper oss å gi deg best mulig oppfølging. Neste steg er å laste ned PDF-en og sende den til oss.</p>
+    <p style="font-size:.88rem;color:var(--muted);line-height:1.7;max-width:400px;margin:0 auto">Svarene dine hjelper oss å gi deg best mulig oppfølging. Neste steg er å laste ned helseskjemaet og sende det til oss.</p>
   </div>
 
   <div class="card" style="margin-top:0">
     <div class="card-title">📤 Send til klinikken</div>
     <ol style="font-size:.85rem;color:var(--ink);line-height:2;margin:0;padding-left:20px">
-      <li>Trykk på knappen nedenfor for å laste ned PDF-en</li>
+      <li>Trykk på knappen nedenfor for å laste ned helseskjemaet</li>
       <li>Gå til <a href="https://www.pasientsky.no" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">pasientsky.no</a> og logg inn</li>
-      <li>Finn klinikken i kontaktlisten og legg ved PDF-filen</li>
+      <li>Finn klinikken i kontaktlisten og legg ved filen</li>
       <li>Send meldingen</li>
     </ol>
-    <button class="btn btn-primary" style="width:100%;margin-top:18px;font-size:1rem;padding:14px" onclick="printPDF()">⬇️ Last ned PDF</button>
+    <button class="btn btn-primary" style="width:100%;margin-top:18px;font-size:1rem;padding:14px" onclick="downloadPNG()">⬇️ Last ned helseskjema</button>
     <div id="ios-help" style="display:none;background:#fff3cd;border:1px solid #ffc107;border-radius:8px;padding:12px 14px;margin-top:12px">
       <p style="font-size:.82rem;color:#856404;font-weight:600;margin:0 0 4px">📱 Tips for iPhone / iPad</p>
-      <p style="font-size:.8rem;color:#856404;line-height:1.6;margin:0">PDF-en åpnes i en ny fane. Trykk på <strong>Del-knappen</strong> (firkant med pil opp) og velg <strong>«Lagre til Filer»</strong> for å lagre den på enheten din. Deretter kan du laste den opp i Pasientsky.</p>
+      <p style="font-size:.8rem;color:#856404;line-height:1.6;margin:0">Filen åpnes i en ny fane. Trykk på <strong>Del-knappen</strong> (firkant med pil opp) og velg <strong>«Lagre til Filer»</strong> for å lagre den på enheten din. Deretter kan du laste den opp i Pasientsky.</p>
     </div>
     <div style="background:#fdecea;border:1px solid #e8b4b0;border-radius:8px;padding:11px 14px;margin-top:14px">
-      <p style="font-size:.8rem;color:#c0392b;font-weight:600;margin:0 0 3px">⚠️ Ikke send PDF på e-post</p>
-      <p style="font-size:.78rem;color:#922b21;margin:0;line-height:1.5">PDF-en inneholder helseopplysninger og skal <strong>kun</strong> sendes via <a href="https://www.pasientsky.no" target="_blank" rel="noopener" style="color:#922b21">pasientsky.no</a>.</p>
+      <p style="font-size:.8rem;color:#c0392b;font-weight:600;margin:0 0 3px">⚠️ Ikke send helseskjemaet på e-post</p>
+      <p style="font-size:.78rem;color:#922b21;margin:0;line-height:1.5">Filen inneholder helseopplysninger og skal <strong>kun</strong> sendes via <a href="https://www.pasientsky.no" target="_blank" rel="noopener" style="color:#922b21">pasientsky.no</a>.</p>
     </div>
     <div style="background:#f0f4f8;border:1px solid #c8d6e5;border-radius:8px;padding:10px 14px;margin-top:10px">
-      <p style="font-size:.78rem;color:#7f8c8d;margin:0;line-height:1.5">🔒 <strong>Personvern:</strong> Ingen data fra dette skjemaet sendes til noen server. Alt behandles lokalt i din nettleser. Når du lukker denne siden, forsvinner alle data – kun PDF-en du har lastet ned beholdes på din enhet.</p>
+      <p style="font-size:.78rem;color:#7f8c8d;margin:0;line-height:1.5">🔒 <strong>Personvern:</strong> Ingen data fra dette skjemaet sendes til noen server. Alt behandles lokalt i din nettleser. Når du lukker denne siden, forsvinner alle data – kun filen du har lastet ned beholdes på din enhet.</p>
     </div>
   </div>
 
@@ -2143,6 +2144,42 @@
   function printPDF() {
     // Uses jsPDF (loaded from CDN) to generate a real downloadable .pdf file
     // suitable for attaching in Pasientsky or other EMR systems.
+    const doc = buildJsPdfDoc();
+
+    // ── Save (iOS-compatible) ─────────────────────────────
+    const navn = val('navn');
+    const safeName = (navn !== '–' ? navn.replace(/\s+/g,'-') : 'pasient');
+    const filnavn = 'helsesjekk-' + safeName + '-' + new Date().toISOString().slice(0,10) + '.pdf';
+    
+    // Detect iOS/iPadOS
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
+                  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    
+    if (isIOS) {
+      // iOS: open as blob in new tab – user can then use Share → Save to Files
+      const blob = doc.output('blob');
+      const blobUrl = URL.createObjectURL(blob);
+      const newWin = window.open(blobUrl, '_blank');
+      if (!newWin) {
+        // Popup blocked – use download link fallback
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = filnavn;
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(blobUrl); }, 1000);
+      }
+      // Show iOS-specific help message
+      const helpMsg = document.getElementById('ios-help');
+      if (helpMsg) helpMsg.style.display = 'block';
+    } else {
+      // Desktop / Android: normal download
+      doc.save(filnavn);
+    }
+  }
+
+  function buildJsPdfDoc() {
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' });
 
@@ -2574,37 +2611,152 @@
       creator: 'STERK Helsesjekk v2.0'
     });
 
-    // ── Save (iOS-compatible) ─────────────────────────────
-    const safeName = (navn !== '–' ? navn.replace(/\s+/g,'-') : 'pasient');
-    const filnavn = 'helsesjekk-' + safeName + '-' + new Date().toISOString().slice(0,10) + '.pdf';
-    
-    // Detect iOS/iPadOS
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || 
-                  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-    
-    if (isIOS) {
-      // iOS: open as blob in new tab – user can then use Share → Save to Files
-      const blob = doc.output('blob');
-      const blobUrl = URL.createObjectURL(blob);
-      const newWin = window.open(blobUrl, '_blank');
-      if (!newWin) {
-        // Popup blocked – use download link fallback
-        const a = document.createElement('a');
-        a.href = blobUrl;
-        a.download = filnavn;
-        a.style.display = 'none';
-        document.body.appendChild(a);
-        a.click();
-        setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(blobUrl); }, 1000);
+    // Store JSON for PNG export reuse
+    doc.__sterkJson = jsonStr;
+
+    return doc;
+  }
+
+  // ── PNG Download ─────────────────────────────────────────
+  // Generates the same jsPDF document, renders each page via pdf.js,
+  // stacks them into one tall PNG, and injects STERK metadata into
+  // a tEXt chunk so legevisning.html can read it.
+  async function downloadPNG() {
+    try {
+      // 1. Build the PDF in memory
+      const doc = buildJsPdfDoc();
+
+      // 2. Get patient data JSON + base64
+      const jsonStr = doc.__sterkJson;
+      const b64 = btoa(unescape(encodeURIComponent(jsonStr)));
+      const metaStr = 'STERK_DATA_V1:' + b64;
+
+      // 3. Set up pdf.js worker
+      pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+      // 4. Render PDF pages to canvases via pdf.js
+      const pdfBytes = doc.output('arraybuffer');
+      const pdfDoc = await pdfjsLib.getDocument({ data: pdfBytes }).promise;
+      const canvases = [];
+      let totalHeight = 0;
+      let maxWidth = 0;
+      const scale = 2;
+
+      for (let p = 1; p <= pdfDoc.numPages; p++) {
+        const page = await pdfDoc.getPage(p);
+        const viewport = page.getViewport({ scale: scale });
+        const canvas = document.createElement('canvas');
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        const ctx = canvas.getContext('2d');
+        await page.render({ canvasContext: ctx, viewport: viewport }).promise;
+        canvases.push(canvas);
+        totalHeight += canvas.height;
+        if (canvas.width > maxWidth) maxWidth = canvas.width;
       }
-      // Show iOS-specific help message
-      const helpMsg = document.getElementById('ios-help');
-      if (helpMsg) helpMsg.style.display = 'block';
-    } else {
-      // Desktop / Android: normal download
-      doc.save(filnavn);
+
+      // 5. Combine all pages into one tall canvas
+      const combined = document.createElement('canvas');
+      combined.width = maxWidth;
+      combined.height = totalHeight;
+      const cCtx = combined.getContext('2d');
+      cCtx.fillStyle = '#ffffff';
+      cCtx.fillRect(0, 0, maxWidth, totalHeight);
+      let yOff = 0;
+      for (const c of canvases) {
+        cCtx.drawImage(c, 0, yOff);
+        yOff += c.height;
+      }
+
+      // 6. Get PNG bytes and inject tEXt chunk with STERK metadata
+      const dataUrl = combined.toDataURL('image/png');
+      const rawB64 = dataUrl.split(',')[1];
+      const pngBytes = Uint8Array.from(atob(rawB64), c => c.charCodeAt(0));
+      const withMeta = injectPngTextChunk(pngBytes, 'Comment', metaStr);
+
+      // 7. Download
+      const navn = val('navn');
+      const safeName = (navn !== '–' ? navn.replace(/\s+/g, '-') : 'pasient');
+      const filnavn = 'helseskjema-' + safeName + '-' + new Date().toISOString().slice(0, 10) + '.png';
+
+      const blob = new Blob([withMeta], { type: 'image/png' });
+      const url = URL.createObjectURL(blob);
+
+      const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+                    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      if (isIOS) {
+        const newWin = window.open(url, '_blank');
+        if (!newWin) {
+          const a = document.createElement('a');
+          a.href = url; a.download = filnavn; a.style.display = 'none';
+          document.body.appendChild(a); a.click();
+          setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(url); }, 1000);
+        }
+        const helpMsg = document.getElementById('ios-help');
+        if (helpMsg) helpMsg.style.display = 'block';
+      } else {
+        const a = document.createElement('a');
+        a.href = url; a.download = filnavn; a.style.display = 'none';
+        document.body.appendChild(a); a.click();
+        setTimeout(() => { document.body.removeChild(a); URL.revokeObjectURL(url); }, 1000);
+      }
+    } catch (err) {
+      console.error('PNG download feil:', err);
+      alert('Kunne ikke laste ned helseskjemaet. Prøv igjen.');
     }
   }
+
+  // ── PNG tEXt chunk injector ──────────────────────────────
+  function injectPngTextChunk(pngBytes, keyword, value) {
+    // Build tEXt chunk: keyword\0value
+    const kwBytes = new TextEncoder().encode(keyword);
+    const valBytes = new TextEncoder().encode(value);
+    const dataLen = kwBytes.length + 1 + valBytes.length; // +1 for null separator
+
+    const chunkData = new Uint8Array(dataLen);
+    chunkData.set(kwBytes, 0);
+    chunkData[kwBytes.length] = 0; // null separator
+    chunkData.set(valBytes, kwBytes.length + 1);
+
+    const chunkType = new Uint8Array([0x74, 0x45, 0x58, 0x74]); // "tEXt"
+
+    // CRC32
+    const crcInput = new Uint8Array(4 + dataLen);
+    crcInput.set(chunkType, 0);
+    crcInput.set(chunkData, 4);
+    const crc = crc32(crcInput);
+
+    // Build chunk: length(4) + type(4) + data + crc(4)
+    const chunk = new Uint8Array(12 + dataLen);
+    const dv = new DataView(chunk.buffer);
+    dv.setUint32(0, dataLen);
+    chunk.set(chunkType, 4);
+    chunk.set(chunkData, 8);
+    dv.setUint32(8 + dataLen, crc);
+
+    // Find end of IHDR chunk (8 sig + 4 len + 4 type + 13 data + 4 crc = 33)
+    const ihdrEnd = 8 + 4 + 4 + 13 + 4; // = 33
+
+    // Assemble: sig+IHDR + our tEXt + rest
+    const result = new Uint8Array(pngBytes.length + chunk.length);
+    result.set(pngBytes.subarray(0, ihdrEnd), 0);
+    result.set(chunk, ihdrEnd);
+    result.set(pngBytes.subarray(ihdrEnd), ihdrEnd + chunk.length);
+    return result;
+  }
+
+  // ── CRC32 for PNG chunks ─────────────────────────────────
+  function crc32(buf) {
+    let crc = 0xFFFFFFFF;
+    for (let i = 0; i < buf.length; i++) {
+      crc ^= buf[i];
+      for (let j = 0; j < 8; j++) {
+        crc = (crc >>> 1) ^ (crc & 1 ? 0xEDB88320 : 0);
+      }
+    }
+    return (crc ^ 0xFFFFFFFF) >>> 0;
+  }
+
   // ── AUDIT-C auto-score ──────────────────────────────────
   function calcAudit() {
     const scores = {
